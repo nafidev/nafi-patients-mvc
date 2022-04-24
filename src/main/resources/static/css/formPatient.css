@@ -1,0 +1,106 @@
+body{
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    font-family: Bahnschrift;
+}
+
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+.form input {
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #5fa8d3;
+}
+.form label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 10px;
+    color: #5fa8d3;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 43%;
+}
+
+.imgformpatient{
+    margin-top: 20px;
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.image1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+}
+
+#ajouter{
+    margin-top: 10px;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=date] {
+    -moz-appearance: textfield;
+}
+
+#check{
+    height: 30%;
+    padding-top: 80px;
+
+
+
+}

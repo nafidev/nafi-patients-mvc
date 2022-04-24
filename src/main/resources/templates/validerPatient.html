@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layoutTemplate">
+<head>
+    <link rel="stylesheet" th:href="@{css/validerPatient.css}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content1">
+    <div class="div1">
+        <h4>Patient ajouté avec succès !</h4>
+        <img class="imgvaliderpatient" src="https://media.istockphoto.com/videos/doctors-and-nurses-team-video-id1221362151?s=640x640">
+    </div>
+    <div class="div2">
+        <a id="lis" th:href="@{index}">
+            <button class="btn btn-success btn-sm">
+                Liste des patients
+            </button>
+        </a>
+        <a id="acc" th:href="@{home}">
+            <button class="btn btn-primary btn-sm">
+                Accueil
+            </button>
+        </a>
+    </div>
+</div>
+</body>
+</html>

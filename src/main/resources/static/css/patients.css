@@ -1,0 +1,44 @@
+.tableau {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+}
+
+.tableau thead tr {
+    background-color: #009879;
+    color: white;
+    font-weight: bold;
+}
+
+.tableau th,
+.tableau td {
+    padding: 12px 15px;
+}
+
+.tableau tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tableau tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#input {
+    margin-top: 20px;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 15);
+}
+
+
+#titre{
+    font-size: 30px
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layoutTemplate">
+<head>
+    <link rel="stylesheet" th:href="@{css/formPatient.css}"/>
+    <meta charset="UTF-8">
+    <title>Form Patient</title>
+</head>
+<body>
+<div layout:fragment="content1">
+
+    <div class="imgformpatient">
+        <img class="image1" src="https://t4.ftcdn.net/jpg/02/74/73/01/360_F_274730119_ht4FXz4R6RnIJgPk7WeNALxxaf524Jrb.jpg">
+    </div>
+
+    <form method="post" th:action="@{save}">
+
+    <div class="form">
+    <input class="form-control" type="text" name="nom" th:value="${patient.nom}" autocomplete="off" required/>
+    <label class="label-name">
+        <span class="content-name">
+              Nom
+        </span>
+    </label>
+    </div>
+
+    <div class="form" >
+        <input class="form-control" name="dateNaissance" type="date" th:value="${patient.dateNaissance}" required>
+        <label class="label-name">
+        <span class="content-name">
+              Date de Naissance
+        </span>
+        </label>
+    </div>
+
+    <div class="form">
+        <input class="form-control" type="text" name="score" th:value="${patient.score}" autocomplete="off" required/>
+        <label class="label-name">
+        <span class="content-name">
+              Score
+        </span>
+        </label>
+    </div>
+
+    <div class="form">
+        <input  id="check" type="checkbox" name="malade" th:checked="${patient.malade}"/>
+        <label for="check" class="label-name">
+        <span class="content-name">
+              Malade
+        </span>
+        </label>
+    </div>
+
+    <div id="ajouter" class="form">
+        <button type="submit" class="btn btn-success btn-sm">Ajouter</button>
+        <a th:href="@{home}"> <button style="float: right" class="btn btn-primary btn-sm">Accueil</button></a>
+    </div>
+    </form>
+</div>
+</body>
+</html>
