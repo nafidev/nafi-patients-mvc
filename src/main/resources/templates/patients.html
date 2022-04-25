@@ -34,7 +34,7 @@
 <table class="tableau">
    <thead>
    <tr>
-       <th>ID</th><th>Nom</th><th>Date</th><th>Malade</th><th>Score</th><th>Delete</th>
+       <th>ID</th><th>Nom</th><th>Date</th><th>Malade</th><th>Score</th><th>Delete</th><th>Edit</th>
    </tr>
 
    </thead>
@@ -55,7 +55,7 @@
 
                  </a>
             </td>
-            <td> <a class="btn btn-outline-primary btn-sm" th:href="@{edit(id=${p.id})}">
+            <td> <a class="btn btn-success btn-sm" th:href="@{edit(id=${p.id})}">
 
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">

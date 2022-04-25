@@ -1,0 +1,49 @@
+body{
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    font-family: Bahnschrift;
+}
+
+
+
+.formpatient {
+    margin-bottom: 20px;
+}
+.formpatient input {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.formpatient input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.imgformpatient{
+    margin-top: 20px;
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.image1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+    margin-bottom: 10px;
+}
+#ajouter {
+margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+}
+#accueil {
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+}
