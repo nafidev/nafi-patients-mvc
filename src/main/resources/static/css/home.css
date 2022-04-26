@@ -30,4 +30,20 @@
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 15);
 }
+.minidiv1 {
+
+    width: 25%;
+    height: 250px;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+.minidiv1 img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 15);
+}
+.but {
+    margin-bottom: 40px;
+    margin-left: 40%;
+}
+
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" th:href="@{css/home.css}"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,6 +17,16 @@
 <div class="rightdiv">
     <h1 id="wlc">Welcome to yourHospital.com</h1>
     <h6 id="cre">created by Mustapha Nafi</h6>
+
+    <div class="minidiv1">
+        <img src="http://www.midlandfigureskatingclub.org/wp-content/uploads/2015/09/clickhere.png">
+    </div>
+    <div class="but">
+        <a class="btn btn-success" th:href="@{/index}">
+            Liste des patients
+        </a>
+    </div>
+
 
 </div>
 </body>

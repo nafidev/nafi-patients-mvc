@@ -16,5 +16,6 @@ public interface PatientRepository extends JpaRepository <Patient, Long> {
     public List<Patient> findPatientByScoreIsLessThan(int score);
 
     public Page<Patient> findPatientByNomContains(String kw, Pageable pageable);
+    public Page<Patient> findPatientById(Long id, Pageable pageable);
 
 }

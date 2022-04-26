@@ -19,6 +19,8 @@ import java.util.List;
 @AllArgsConstructor
 public class PatientController {
 
+
+
     @Autowired
     private PatientRepository patientRepository;
 
@@ -79,11 +81,13 @@ public class PatientController {
     }
 
 
-    @PutMapping(path = "/editPatient")
-    public String editPatient(Model model, Long id){
-        Patient patient = patientRepository.findById(id).orElse(null);
-        if(patient==null) throw new RuntimeException("Patient introuvable");
-        model.addAttribute("patient", patient);
+    @GetMapping("/editPatient")
+    public String editPatient(Model model,Long id,String keyword, int page){
+        Patient patient=patientRepository.findById(id).orElse((null));
+        if (patient==null) throw new RuntimeException("Patient  Introuvable" );
+        model.addAttribute("patient" ,patient);
+        model.addAttribute("page",page);
+        model.addAttribute("keyword",keyword);
         return "editPatient";
     }
 }

@@ -14,7 +14,7 @@
     <div class="imgformpatient">
         <img class="image1" src="https://t4.ftcdn.net/jpg/02/74/73/01/360_F_274730119_ht4FXz4R6RnIJgPk7WeNALxxaf524Jrb.jpg">
 
-        <form class="formpatient" method="post" th:action="@{save}">
+        <form class="formpatient" method="post" th:action="@{/save}">
         <div>
             <label for="nom">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
@@ -51,10 +51,10 @@
         </div>
             <div>
         <a>
-            <button id="ajouter" type="submit" th:action="@{save}" class="btn btn-success btn-sm">Ajouter</button>
+            <button id="ajouter" type="submit" th:action="@{/save}" class="btn btn-success btn-sm">Ajouter</button>
         </a>
                 <a>
-                    <button id="accueil" th:action="@{home}" class="btn btn-primary btn-sm">Accueil</button>
+                    <button id="accueil" th:action="@{/home}" class="btn btn-primary btn-sm">Accueil</button>
                 </a>
             </div>
         </form>
