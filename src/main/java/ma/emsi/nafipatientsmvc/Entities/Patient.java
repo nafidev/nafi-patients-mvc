@@ -1,7 +1,5 @@
 package ma.emsi.nafipatientsmvc.Entities;
 
-
-import jdk.jfr.Timestamp;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
